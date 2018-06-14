@@ -1,0 +1,232 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #12475f;
+	/*
+	background-image: url(img/landing.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+*/
+	color: #fff;
+	/*	line-height: 1.6;*/
+	text-align: center;
+	/*	opacity: 0.5;*/
+	min-height: 100%;
+	height: 100vh;
+	width: 100vw;
+	font-weight: bolder;
+
+}
+
+body {
+	background-image: url(img/landing.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+img {
+	opacity 0.2;
+}
+
+.container {
+	max-width: 960px;
+	margin: auto;
+	padding: 0 30px;
+}
+
+#showcase {
+	height: 300px;
+	margin-bottom: 1rem;
+}
+
+#showcase h1 {
+	font-size: 75px;
+	line-height: 1.3;
+	position: relative;
+	animation: heading;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	/*	margin-bottom: 2rem;*/
+	/*
+	width: 300px;
+	margin-left: auto;
+*/
+}
+
+@keyframes heading {
+	0% {
+		top: -50px;
+	}
+	100% {
+		top: 200px;
+	}
+}
+
+#content {
+	position: relative;
+	animation-name: content;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	margin-top: 10px;
+	/*	color: rebeccapurple;*/
+}
+
+@keyframes content {
+	0% {
+		left: -1000px;
+	}
+	100% {
+		left: 0;
+	}
+}
+
+.btn {
+	display: inline-block;
+	color: #000;
+	text-decoration: none;
+	padding: 1rem 2rem;
+	border: #000 1px solid;
+	border-radius: 20px;
+	margin-top: 80px;
+	opacity: 0;
+	animation-name: btn;
+	animation-duration: 3s;
+	animation-delay: 3s;
+	animation-fill-mode: forwards;
+
+	transition-property: transform;
+	transition-duration: 1s;
+}
+
+.btn:hover {
+	/*	transform: rotateY(180deg);*/
+	/*	transform: translateX(500px);*/
+	cursor: pointer;
+	background-color: blue;
+
+}
+
+@keyframes btn {
+	0% {
+		opacity: 0
+	}
+	100% {
+		opacity: 1;
+		z-index: 5;
+	}
+}
+
+h1 {
+	transition-property: transform;
+	transition-duration: 2s;
+}
+
+h1:hover {
+	transform: rotateY(360deg);
+}
+
+p {
+	font-size: 50px;
+}
+
+span {
+	/*	font-family: 'Sacramento', cursive;*/
+	/*	font-family: 'Great Vibes', cursive;*/
+	/*	font-family: 'Alex Brush', cursive;*/
+	/*	font-family: 'Pinyon Script', cursive;*/
+	/*	font-family: 'Parisienne', cursive;*/
+	font-family: 'Meddon', cursive;
+	color: blue;
+}
+
+span.four {
+	/*	color: red;*/
+	color: blue;
+}
+
+span.seven {
+	/*	color: forestgreen;*/
+	color: blue;
+}
+
+/*
+h1:nth-child(2) {
+	color: red;
+}
+
+h1:nth-child(3) {
+	color: black;
+}
+*/
+
+.subscribe {
+	font-size: 2rem;
+	color: blue;
+	/*	background-color: aliceblue;*/
+	/*	background-blend-mode: soft-light;*/
+	margin-top: 20px;
+	opacity: 0;
+	animation-name: sub;
+	animation-duration: 4s;
+	animation-delay: 4s;
+	animation-fill-mode: forwards;
+
+	transition-property: transform;
+	transition-duration: 1s;
+
+}
+
+@keyframes sub {
+	0% {
+		opacity: 0
+	}
+	100% {
+		opacity: 3
+	}
+}
+
+/*
+.topcontainer {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	flex-wrap: wrap;
+
+}
+*/
+
+/*
+#showcase {
+	display: flex;
+}
+*/
+
+@media screen and (max-width: 980px) {
+	#content {
+		/*		display: none;*/
+		margin-top: 5rem;
+		/*		top: 5000px;*/
+	}
+}
+
+@media screen and (max-width: 550px) {
+	#content {
+		display: none;
+	}
+	.btn {
+		margin-top: 20px;
+	}
+}
+
+/*
+@media screen and (max-width: 600px) {
+  div.example {
+    display: none;
+  }
+}
+*/
